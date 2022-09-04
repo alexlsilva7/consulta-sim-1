@@ -32,4 +32,6 @@ Then('eu vejo uma mensagem que a consulta foi criada com sucesso') do
   page.has_content?('Consulta was successfully created.')
 end
 
-
+Then('eu vejo uma mensagem de que a data é requerida') do
+  page.has_content?("Data can't be blank")
+end
